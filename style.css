@@ -1,0 +1,256 @@
+/* ------------------- */
+/* Reset e Variáveis   */
+/* ------------------- */
+:root {
+    --cor-principal: #F39C12; /* Laranja vibrante */
+    --cor-secundaria: #2c2c2c; /* Cinza bem escuro */
+    --cor-fundo: #1a1a1a;      /* Fundo escuro (preto suave) */
+    --cor-texto: #e0e0e0;      /* Cinza claro para texto */
+    --cor-branco: #ffffff;
+    
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-corpo: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ------------------- */
+/* Estilos Gerais      */
+/* ------------------- */
+body {
+    font-family: var(--fonte-corpo);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-principal);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ------------------- */
+/* Cabeçalho           */
+/* ------------------- */
+.header {
+    background-color: var(--cor-secundaria);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #444; /* Borda sutil para separar do conteúdo */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: var(--cor-principal);
+}
+
+/* ------------------- */
+/* Seção Hero          */
+/* ------------------- */
+.hero {
+    background-color: var(--cor-fundo); /* Mesmo fundo para um visual integrado */
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--cor-branco);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--cor-texto);
+}
+
+.btn-primary {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d4890b; /* Laranja um pouco mais escuro */
+}
+
+/* ------------------- */
+/* Seção Menu          */
+/* ------------------- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    border: 1px solid #444;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+}
+
+/* ------------------- */
+/* Seção Sobre         */
+/* ------------------- */
+.sobre {
+    background-color: var(--cor-secundaria);
+}
+
+.sobre .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.sobre h2 {
+    color: var(--cor-principal);
+}
+
+.sobre p {
+    color: var(--cor-texto);
+    font-size: 1.1rem;
+}
+
+/* ------------------- */
+/* Seção Contato       */
+/* ------------------- */
+.contato .container {
+    text-align: center;
+}
+
+.contato p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+.btn-whatsapp {
+    background-color: #25D366; /* Cor oficial do WhatsApp */
+    color: var(--cor-branco);
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EBE57;
+}
+
+/* ------------------- */
+/* Rodapé              */
+/* ------------------- */
+.footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+}
+
+/* ------------------- */
+/* Responsividade      */
+/* ------------------- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2rem; }
+
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header nav ul {
+        gap: 15px;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+}
