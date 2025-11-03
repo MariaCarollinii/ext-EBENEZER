@@ -151,6 +151,12 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Remove o sublinhado do link que envolve o card */
+.card-link {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.5);
