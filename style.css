@@ -1,6 +1,4 @@
-/* ------------------- */
 /* Reset e Variáveis   */
-/* ------------------- */
 :root {
     --cor-principal: #F39C12; /* Laranja vibrante */
     --cor-secundaria: #2c2c2c; /* Cinza bem escuro */
@@ -19,9 +17,7 @@
     scroll-behavior: smooth;
 }
 
-/* ------------------- */
 /* Estilos Gerais      */
-/* ------------------- */
 body {
     font-family: var(--fonte-corpo);
     background-color: var(--cor-fundo);
@@ -51,9 +47,7 @@ section {
     padding: 80px 0;
 }
 
-/* ------------------- */
 /* Cabeçalho           */
-/* ------------------- */
 .header {
     background-color: var(--cor-secundaria);
     padding: 15px 0;
@@ -96,9 +90,7 @@ section {
     color: var(--cor-principal);
 }
 
-/* ------------------- */
 /* Seção Hero          */
-/* ------------------- */
 .hero {
     background-color: var(--cor-fundo); /* Mesmo fundo para um visual integrado */
     color: var(--cor-branco);
@@ -133,9 +125,7 @@ section {
     background-color: #d4890b; /* Laranja um pouco mais escuro */
 }
 
-/* ------------------- */
 /* Seção Menu          */
-/* ------------------- */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -179,9 +169,7 @@ section {
     color: var(--cor-texto);
 }
 
-/* ------------------- */
 /* Seção Sobre         */
-/* ------------------- */
 .sobre {
     background-color: var(--cor-secundaria);
 }
@@ -200,9 +188,7 @@ section {
     font-size: 1.1rem;
 }
 
-/* ------------------- */
 /* Seção Contato       */
-/* ------------------- */
 .contato .container {
     text-align: center;
 }
@@ -229,9 +215,7 @@ section {
     background-color: #1EBE57;
 }
 
-/* ------------------- */
 /* Rodapé              */
-/* ------------------- */
 .footer {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
@@ -240,9 +224,94 @@ section {
     border-top: 1px solid #444;
 }
 
-/* ------------------- */
+
+/* slides     */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.left-slide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+button:hover {
+  color: #222;
+}
+button:focus {
+  outline: none;
+}
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
 /* Responsividade      */
-/* ------------------- */
 @media (max-width: 768px) {
     h1 { font-size: 2.8rem; }
     h2 { font-size: 2rem; }

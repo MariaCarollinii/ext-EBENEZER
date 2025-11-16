@@ -19,7 +19,7 @@
     <!-- Cabeçalho e Navegação -->
     <header class="header">
         <div class="container">
-            <a href="#" class="logo">Delícias Caseiras</a>
+            <a href="index.html" class="logo">Delícias Caseiras</a>
             <nav>
                 <ul>
                     <li><a href="#menu">Cardápio</a></li>
@@ -30,7 +30,41 @@
         </div>
     </header>
 
-    <main>
+    <!-- Slide de imagens -->
+    <main id="main-content">
+        <div class="slider-container">
+      <div class="left-slide">
+        <div style="background-color: #694c18">
+          <h1>Pizza de Peperroni</h1>
+        </div>
+        <div style="background-color: #5e4212">
+          <h1>Pão Caseiro</h1>
+        </div>
+        <div style="background-color: #4b350e">
+          <h1>Pizza de Calabresa</h1>
+        </div>
+        <div style="background-color: #412e0c">
+          <h1>Risoles de Carne</h1>
+        </div>
+      </div>
+      <div class="right-slide">
+        <div style="background-image: url('imagens/risoles.jpg')"></div>
+        <div style="background-image: url('imagens/pizaza.jpeg')"></div>
+        <div style="background-image: url('imagens/pao.jpeg')"></div>
+        <div style="background-image: url('imagens/pizza-peperoni-roni-roni.jpeg')"></div>
+      </div>
+      <div class="action-buttons">
+        <button class="down-button">
+          <i class="fas fa-arrow-down">▼</i>
+        </button>
+        <button class="up-button">
+          <i class="fas fa-arrow-up">▲</i>
+        </button>
+      </div>
+    </div>
+    <!-- Slide -->
+
+
         <!-- Seção Principal (Hero) -->
         <section class="hero">
             <div class="container">
@@ -48,7 +82,7 @@
                     <!-- Categoria 1: Salgados -->
                     <a href="salgados.html" class="card-link">
                         <div class="card">
-                            <img src="https://placehold.co/400x300/e8a87c/4d4d4d?text=Salgados" alt="Variedade de salgados fritos e assados">
+                            <img src="imagens/risoles.jpg" alt="Variedade de salgados fritos e assados">
                             <h3>Salgados Tradicionais</h3>
                             <p>Coxinhas, kibes, risoles e muito mais. Veja todas as nossas opções!</p>
                         </div>
@@ -56,7 +90,7 @@
                     <!-- Categoria 2: Pizzas -->
                     <a href="pizzas.html" class="card-link">
                         <div class="card">
-                            <img src="https://placehold.co/400x300/e27d60/4d4d4d?text=Pizzas" alt="Pizza com queijo derretido">
+                            <img src="imagens/pizaza.jpeg" alt="Pizza de calabresa com borda recheada">
                             <h3>Pizzas</h3>
                             <p>Pizzas artesanais com massa fofinha e recheios deliciosos.</p>
                         </div>
@@ -64,14 +98,14 @@
                     <!-- Categoria 3: Esfihas -->
                     <a href="esfihas.html" class="card-link">
                         <div class="card">
-                            <img src="https://placehold.co/400x300/c38d9e/4d4d4d?text=Esfihas" alt="Esfihas abertas de carne e queijo">
+                            <img src="imagens/esfihaa.jpeg" alt="Esfihas abertas de carne e queijo">
                             <h3>Esfihas</h3>
                             <p>Nossas esfihas abertas com massa levinha. Impossível comer uma só!</p>
                         </div>
                     </a>
                     <!-- Item 4: Pão Caseiro (item único) -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/a8d08d/4d4d4d?text=Pão+Caseiro" alt="Pão caseiro recém-assado">
+                        <img src="imagens/pao.jpeg" alt="Pão caseiro recém-assado">
                         <h3>Pão Caseiro</h3>
                         <p>Pão fofinho e saboroso, feito com a receita tradicional da família.</p>
                     </div>
@@ -93,7 +127,8 @@
                 <h2>Gostou? Peça agora!</h2>
                 <p>Entre em contato pelo WhatsApp para fazer sua encomenda ou tirar dúvidas. Será um prazer atender você!</p>
                 <!-- IMPORTANTE: O número de WhatsApp foi atualizado. -->
-                <a href="https://api.whatsapp.com/send?phone=554488111101&text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda%20de%20salgados." class="btn-whatsapp" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=554488111101&text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda%20de%20salgados." 
+                class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
                     Peça pelo WhatsApp
                 </a>
             </div>
@@ -106,6 +141,8 @@
             <p>&copy; 2024 Delícias Caseiras. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="js.js" defer></script>
 
 </body>
 </html>
