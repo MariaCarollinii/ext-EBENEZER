@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio de Pizzas - Delícias Caseiras</title>
+    <title>Cardápio de Pizzas - Ebenézer</title>
     <meta name="description" content="Conheça nossas deliciosas pizzas artesanais, com massa fofinha e recheios incríveis.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para ícones (incluindo WhatsApp) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon (ícone da aba do navegador) -->
+    <link rel="icon" href="imagens/favicon.png" type="image/png">
 
     <!-- Link para o arquivo de CSS -->
     <link rel="stylesheet" href="style.css">
@@ -19,7 +25,7 @@
     <!-- Cabeçalho e Navegação -->
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">Delícias Caseiras</a>
+            <a href="index.html" class="logo"><img src="imagens/logo-ebenezer-transparente.png" alt="Logo Ebenézer"></a>
             <nav>
                 <ul>
                     <li><a href="index.html#menu">Cardápio</a></li>
@@ -39,49 +45,49 @@
                     
                     <!-- Pizza 1: Frango com Catupiry -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/e27d60/ffffff?text=Frango+com+Catupiry" alt="Pizza de Frango com Catupiry">
+                        <img src="imagens/frango-catupiry.jpeg" alt="Pizza de Frango com Catupiry">
                         <h3>Frango com Catupiry</h3>
                         <p>O clássico irresistível: frango desfiado coberto com o mais cremoso Catupiry Original.</p>
                     </div>
 
                     <!-- Pizza 2: Presunto, Queijo e Calabresa -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/e27d60/ffffff?text=Presunto,+Queijo+e+Calabresa" alt="Pizza de Presunto, Queijo e Calabresa">
+                        <img src="imagens/presunto-e-queijo-com-calabresa.jpeg" alt="Pizza de Presunto, Queijo e Calabresa">
                         <h3>Presunto, Queijo e Calabresa</h3>
                         <p>Uma combinação perfeita de sabores com presunto, muçarela derretida e calabresa fatiada.</p>
                     </div>
 
                     <!-- Pizza 3: Calabresa -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/e27d60/ffffff?text=Calabresa" alt="Pizza de Calabresa">
+                        <img src="imagens/calabresa.jpeg" alt="Pizza de Calabresa">
                         <h3>Calabresa</h3>
                         <p>A favorita de muitos! Fatias de calabresa de alta qualidade sobre um delicioso molho de tomate.</p>
                     </div>
 
                     <!-- Pizza 4: Calabresa Acebolada -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/e27d60/ffffff?text=Calabresa+Acebolada" alt="Pizza de Calabresa Acebolada">
+                        <img src="imagens/calabresa-acebolada.jpeg" alt="Pizza de Calabresa Acebolada">
                         <h3>Calabresa Acebolada</h3>
                         <p>A tradicional pizza de calabresa com um toque especial de cebolas fatiadas finamente.</p>
                     </div>
 
                     <!-- Pizza 5: Catupyresa -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/e27d60/ffffff?text=Catupyresa" alt="Pizza de Catupyresa">
+                        <img src="imagens/catupyresa.jpeg" alt="Pizza de Catupyresa">
                         <h3>Catupyresa</h3>
                         <p>A união perfeita entre a calabresa saborosa e a cremosidade inconfundível do Catupiry.</p>
                     </div>
 
                     <!-- Pizza 6: Presunto e Queijo -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/e27d60/ffffff?text=Presunto+e+Queijo" alt="Pizza de Presunto e Queijo">
+                        <img src="imagens/presunto-e-queijo.jpeg" alt="Pizza de Presunto e Queijo">
                         <h3>Presunto e Queijo</h3>
                         <p>Simples e deliciosa. Uma generosa camada de presunto coberta com muçarela derretida.</p>
                     </div>
 
                     <!-- Pizza 7: Bacon Acebolado -->
                     <div class="card">
-                        <img src="https://placehold.co/400x300/e27d60/ffffff?text=Bacon+Acebolado" alt="Pizza de Bacon Acebolado">
+                        <img src="imagens/bacon-acebolado.jpeg" alt="Pizza de Bacon Acebolado">
                         <h3>Bacon Acebolado</h3>
                         <p>Cubos de bacon crocante com cebola sobre nossa massa artesanal. Uma explosão de sabor!</p>
                     </div>
@@ -94,9 +100,18 @@
     <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Delícias Caseiras. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Ebenézer. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=554488111101&text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>

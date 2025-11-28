@@ -1,4 +1,16 @@
 
+// Efeito do cabeçalho ao rolar a página
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    // Adiciona a classe 'scrolled' se a rolagem for maior que 50px, senão remove
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
 
 
 //slider
@@ -34,6 +46,10 @@ const changeSlide = (direction) => {
     slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
 }
 
+// Transição automática do carrossel
+setInterval(() => {
+    changeSlide('up'); // Muda para o próximo slide (para cima)
+}, 3000); // Intervalo 
 
 
 //imagem não carregadas
